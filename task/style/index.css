@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header .navbar {
+  display: flex;
+  padding-left: 0;
+  padding-top: 20px;
+}
+header h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 300px;
+}
+header a {
+  text-decoration: none;
+  color: grey;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-right: 20px;
+}
+
+.first {
+  background-image: url("../image/cover(1).png");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+}
+.first .title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 30vh;
+  position: absolute;
+  top: -80px;
+}
+.first .title .submit {
+  padding-top: 35px;
+}
+.first .title h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #252B42;
+  font-family: "Martel", serif;
+  padding-bottom: 35px;
+  line-height: 70px;
+}
+.first .title p {
+  color: #737373;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.first .title .brown {
+  width: 110px;
+  height: 28px;
+  background: #784F33;
+  border-radius: 37px;
+  padding: 10px 36px;
+  box-sizing: content-box;
+  color: white;
+}
+.first .title .white {
+  width: 83px;
+  height: 28px;
+  padding: 10px 36px;
+  box-sizing: content-box;
+  border-radius: 37px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #784F33;
+  margin-left: 10px;
+}
+
+.cards {
+  position: absolute;
+  display: flex;
+  bottom: -20px;
+  gap: 40px;
+  left: 30vh;
+}
+.cards .whitecard {
+  width: 328px;
+  height: 210px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  background-color: white;
+}
+.cards .whitecard svg {
+  padding: 30px 0 10px 30px;
+}
+.cards .whitecard h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Martel", serif;
+  padding: 10px 0 10px 30px;
+}
+.cards .whitecard p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #737373;
+  padding: 10px 0 10px 30px;
+}
+
+.bluecard {
+  width: 328px;
+  height: 210px;
+  background-color: #295C7A;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  color: white;
+}
+.bluecard svg {
+  padding: 30px 0 10px 30px;
+}
+.bluecard h3 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Martel", serif;
+  padding: 10px 0 10px 30px;
+}
+.bluecard p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0 10px 30px;
+}
+
+.second {
+  width: 100%;
+  height: 100vh;
+  background: #FAFAFA;
+}
+.second .clients {
+  display: flex;
+}
+.second .card {
+  width: 230px;
+  height: 202px;
+  background-color: white;
+  padding: 17px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.second .title {
+  text-align: center;
+  padding-top: 160px;
+}
+.second h2 {
+  font-family: "Martel", serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #252B42;
+  padding-bottom: 20px;
+}
+.second p {
+  color: #737373;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+.second h3 {
+  font-family: "Martel", serif;
+  font-size: 40px;
+}
+.second h5 {
+  font-family: "Martel", serif;
+  color: #737373;
+  font-size: 16px;
+}/*# sourceMappingURL=index.css.map */
